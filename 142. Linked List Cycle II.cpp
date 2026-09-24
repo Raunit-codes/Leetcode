@@ -40,10 +40,8 @@ public:
         while (fast->next != slow) {
             fast = fast->next;
         }
-
+        // break cycle
         fast->next = nullptr;
 
-        // Break cycle
-        cycleEnd->next = nullptr;
     }
 };
